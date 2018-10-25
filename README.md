@@ -19,7 +19,7 @@ yarn add @rehooks/online-status
 import useOnlineStatus from '@rehooks/online-status';
 
 function MyComponent() {
-  let value = useOnlineStatus();
+  let onlineStatus = useOnlineStatus();
   return (
     <div>
       <h1>You are {onlineStatus ? "Online" : "Offline"}</h1>
