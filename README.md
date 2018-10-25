@@ -1,6 +1,6 @@
-# `@rehooks/...`
+# `@rehooks/online-status`
 
-> React hook for ...
+> React hook for subscribing to online status
 
 > **Note:** This is using the new [React Hooks API Proposal](https://reactjs.org/docs/hooks-intro.html)
 > which is subject to change until React 16.7 final.
@@ -10,17 +10,19 @@
 ## Install
 
 ```sh
-yarn add @rehooks/...
+yarn add @rehooks/online-status
 ```
 
 ## Usage
 
 ```js
-import use... from '@rehooks/...';
+import useOnlineStatus from '@rehooks/online-status';
 
 function MyComponent() {
-  let value = use...();
-  // value == ...
-  return <div/>;
+  let value = useOnlineStatus();
+  return (
+    <div>
+      <h1>You are {onlineStatus ? "Online" : "Offline"}</h1>
+    </div>
 }
 ```
