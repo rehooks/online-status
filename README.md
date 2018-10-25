@@ -24,5 +24,6 @@ function MyComponent() {
     <div>
       <h1>You are {onlineStatus ? "Online" : "Offline"}</h1>
     </div>
+  );
 }
 ```
