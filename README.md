@@ -1,6 +1,6 @@
 # `@rehooks/online-status`
 
-> React hook for subscribing to online/offline events and the `navigator.onLine` property to see current status
+> React hook for subscribing to `online`/`offline` events and the `navigator.onLine` property to see current status
 
 > **Note:** This is using the new [React Hooks API Proposal](https://reactjs.org/docs/hooks-intro.html)
 > which is subject to change until React 16.7 final.
