@@ -1,10 +1,10 @@
 {
-  "name": "@rehooks/...",
+  "name": "@rehooks/online-status",
   "version": "1.0.0",
-  "description": "React hook for ...",
+  "description": "React hook for monitoring online status",
   "main": "index.js",
-  "repository": "https://github.com/rehooks/...",
-  "author": "...",
+  "repository": "https://github.com/rehooks/online-status",
+  "author": "@mathdroid",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
@@ -12,7 +12,8 @@
   "keywords": [
     "react",
     "hooks",
-    "..."
+    "offline",
+    "online"
   ],
   "files": [
     "index.*"
