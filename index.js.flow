@@ -1,0 +1,5 @@
+interface ... {
+  // ...
+}
+
+declare export default function use...(): ...;
