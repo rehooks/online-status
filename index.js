@@ -23,7 +23,7 @@ function useOnlineStatus() {
       window.removeEventListener("online", goOnline);
       window.removeEventListener("offline", goOffline);
     };
-  });
+  }, []);
 
   return onlineStatus;
 }
