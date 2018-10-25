@@ -1,9 +1,9 @@
 import React from "react";
 import { render } from "react-dom";
-import useOfflineStatus from "./";
+import useOnlineStatus from "./";
 
 function App() {
-  let onlineStatus = useOfflineStatus();
+  let onlineStatus = useOnlineStatus();
   return (
     <div>
       <h1>You are {onlineStatus ? "Online" : "Offline"}</h1>
