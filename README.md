@@ -16,10 +16,15 @@ yarn add @rehooks/online-status
 ## Usage
 
 ```js
-import useOnlineStatus from '@rehooks/online-status';
+import useOnlineStatus from "@rehooks/online-status";
 
 function MyComponent() {
-  let onlineStatus = useOnlineStatus();
+  let onlineStatus = useOnlineStatus({
+    onStatusChange: online =>
+      online
+        ? MyToaster.success("You are now online")
+        : MyToaster.danger("You are now offline")
+  });
   return (
     <div>
       <h1>You are {onlineStatus ? "Online" : "Offline"}</h1>
