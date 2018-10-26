@@ -1,5 +1,1 @@
-interface ... {
-  // ...
-}
-
-declare export default function use...(): ...;
+declare export default function useOnlineStatus(): boolean;
