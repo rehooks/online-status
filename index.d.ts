@@ -1,5 +1,3 @@
-interface ... {
-  // ...
-}
+type OnlineStatus = boolean;
 
-export default function use...(): ...;
+export default function useOnlineStatus(): OnlineStatus;
