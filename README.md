@@ -32,3 +32,13 @@ function MyComponent() {
   );
 }
 ```
+
+## API
+
+```js
+useOnlineStatus({
+  onStatusChange: function,
+  onOnline: function,
+  onOffline: function,
+})
+```
