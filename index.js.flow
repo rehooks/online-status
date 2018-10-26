@@ -1,1 +1,5 @@
-declare export default function useOnlineStatus(): boolean;
+declare export default function useOnlineStatus(opts: {
+  onOnline?: () => void,
+  onOffline?: () => void,
+  onStatusChange?: (online: boolean) => void,
+}): boolean;
