@@ -8,12 +8,22 @@ function getOnlineStatus() {
     : true;
 }
 
-function useOnlineStatus() {
+function noop() {}
+
+function useOnlineStatus({
+  onStatusChange = noop,
+  onOnline = noop,
+  onOffline = noop
+}) {
   let [onlineStatus, setOnlineStatus] = useState(getOnlineStatus());
   function goOnline() {
+    onStatusChange(true);
+    onOnline();
     setOnlineStatus(true);
   }
   function goOffline() {
+    onStatusChange(false);
+    onOffline();
     setOnlineStatus(false);
   }
   useEffect(() => {
