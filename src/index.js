@@ -1,5 +1,5 @@
 "use strict";
-let { useState, useEffect } = require("react");
+const { useState, useEffect } = require("react");
 
 function getOnlineStatus() {
   return typeof navigator !== "undefined" &&
@@ -9,16 +9,16 @@ function getOnlineStatus() {
 }
 
 function useOnlineStatus() {
-  let [onlineStatus, setOnlineStatus] = useState(getOnlineStatus());
-  function goOnline() {
-    setOnlineStatus(true);
-  }
-  function goOffline() {
-    setOnlineStatus(false);
-  }
+  const [onlineStatus, setOnlineStatus] = useState(getOnlineStatus());
+
+  const goOnline = () => setOnlineStatus(true);
+
+  const goOffline = () => setOnlineStatus(false);
+
   useEffect(() => {
     window.addEventListener("online", goOnline);
     window.addEventListener("offline", goOffline);
+
     return () => {
       window.removeEventListener("online", goOnline);
       window.removeEventListener("offline", goOffline);
