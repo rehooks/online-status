@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "react-dom";
-import useOnlineStatus from "./";
+import useOnlineStatus from "../src";
 
 function App() {
   let onlineStatus = useOnlineStatus();
