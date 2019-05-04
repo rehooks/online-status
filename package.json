@@ -1,6 +1,6 @@
 {
   "name": "@rehooks/online-status",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "React hook for subscribing to `online`/`offline` events and the `navigator.onLine` property to see current status",
   "main": "src/index.js",
   "repository": "https://github.com/rehooks/online-status",
