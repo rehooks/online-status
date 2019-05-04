@@ -2,7 +2,7 @@
   "name": "@rehooks/online-status",
   "version": "1.1.1",
   "description": "React hook for subscribing to `online`/`offline` events and the `navigator.onLine` property to see current status",
-  "main": "dist/index.js",
+  "main": "src/index.js",
   "repository": "https://github.com/rehooks/online-status",
   "author": "@mathdroid",
   "license": "MIT",
@@ -16,7 +16,7 @@
     "online"
   ],
   "files": [
-    "dist/index.js"
+    "src/index.js"
   ],
   "scripts": {
     "test": "ava __tests__/test.js",
