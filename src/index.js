@@ -11,11 +11,12 @@ function getOnlineStatus() {
 function useOnlineStatus() {
   const [onlineStatus, setOnlineStatus] = useState(getOnlineStatus());
 
-  const goOnline = () => setOnlineStatus(true);
-
-  const goOffline = () => setOnlineStatus(false);
+  
 
   useEffect(() => {
+    const goOnline = () => setOnlineStatus(true);
+    const goOffline = () => setOnlineStatus(false);
+    
     window.addEventListener("online", goOnline);
     window.addEventListener("offline", goOffline);
 
